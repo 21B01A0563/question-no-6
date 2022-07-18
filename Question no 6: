@@ -1,4 +1,21 @@
 6(a):
+from array import *
+a=array('i',[1,4,2,6,8,3,10])      
+ele=int(input("Enter element : "))
+num=0
+for i in range(len(a)):
+        if(a[i] == ele):
+            num=i+1
+            break
+        else:
+             pass
+if(num == 0):
+    print("element was not found")
+else:
+    print('Element found :',num,'position')
+
+
+6(b):
 Str=input("enter your string:")
 digit=0
 upper=0
@@ -16,18 +33,3 @@ print("digits in str is:",digit)
 print("lower case letters in str :",lower)
 print("upper case letters in str :",upper)
  
-6(b):
-from array import *
-a=array('i',[1,4,2,6,8,3,10])      
-ele=int(input("Enter element : "))
-flag=0
-for i in range(len(a)):
-        if(a[i] == ele):
-            flag=i+1
-            break
-        else:
-             pass
-if(flag == 0):
-    print("element was not found")
-else:
-    print('Element found :',flag,'position')
