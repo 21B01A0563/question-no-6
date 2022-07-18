@@ -1,0 +1,17 @@
+6(a):
+Str=input("enter your string:")
+digit=0
+upper=0
+lower=0
+for char in Str:
+    if char.isdigit():
+       digit=digit+1
+    elif char.islower():
+       lower=lower+1
+    elif char.isupper():
+       upper=upper+1
+    else:
+       Pass
+print("digits in str is:",digit)
+print("lower case letters in str :",lower)
+print("upper case letters in str :",upper)
